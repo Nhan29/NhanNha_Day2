@@ -6,6 +6,9 @@ begin
     #Maximize or set size of browser window
     driver.manage.window.maximize
     sleep 5
+    #Get page source and print it
+    page_source = driver.page_source
+    print (page_source)
 ensure
-    driver.quit
+        driver.quit
 end
